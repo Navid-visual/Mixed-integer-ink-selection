@@ -1,0 +1,43 @@
+% Mixed Integer Linear Constrained Quadratic Programming
+load('ink_names.mat')
+load('transmitance_completelibrary.mat')
+n = 44; % number of all inks
+o=8;%number of active inks
+m=n-o;%number of deactive inks
+coresettrans=transmitance;
+%%
+coreset_absorbtance=trans2absorbtance(coresettrans);
+absorbtance_completelibrary=trans2absorbtance(transmitance_completelibrary);
+% absorbtance_completelibrary=trans2absorbtance(base_inks_reflectance);
+primary=absorbtance_completelibrary;
+coresettrans=coreset_absorbtance;
+size_of_test=size(coresettrans,1);
+
+w = sdpvar(size_of_test,n);
+x = binvar(1,n);
+Y = sdpvar(size(coresettrans',1),size(coresettrans',2));
+
+% x=selected_inks_new_obj;
+%%
+
+constraints = [ 0 <= w <= 4*(repmat(x,[size_of_test 1])),...
+                sum(x) == o ,...
+                Y >= 0 , ...
+                Y >= (primary'*w'-coresettrans'), ...
+                Y >= -(primary'*w'-coresettrans'), ...
+                ];
+objective = sum(sum(Y));
+options = sdpsettings('solver','gurobi','debug','on');
+sol = optimize(constraints,objective,options);
+
+
+if sol.problem == 0
+    selected_inks=double(x);
+    thickness=double(w);
+    double(objective)
+    names(logical(selected_inks))
+else
+    sol.info
+    error('didnt work :(')
+    
+end
