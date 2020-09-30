@@ -4,7 +4,6 @@ Here you can find a range of datasets that we have used throughout this project:
 Here you can find the reflectance of 420 handmade watercolor batch.
 ### Oil paint:
 Here you can find the reflectance of 420 handmade oil paint batch.
-
 ### Spectral paintings:
 We have converted several paintings RGB to reflectance using nonlinear regression and a data set of 300 samples. Here you can find some of these spectral images. The images are reshaped into n x 31 array. 31 is the number of the samples in the wavelengths between 400 to 700 nm with 10 nm steps. 
 ### Dataset 300 samples:
