@@ -1,10 +1,10 @@
 # Dataset
 Here you can find a range of datasets that we have used throughout this project: 
 ### Watercolor:
-Here you can find the reflectance of 420 handmade watercolor batch.
+Here you can find the reflectance of 423 handmade watercolor batch.
 ![Dataset Watercolor](https://github.com/Navid-visual/Mixed-integer-ink-selection/blob/main/Dataset/Water%20color%20paint/all.png)
 ### Oil paint:
-Here you can find the reflectance of 420 handmade oil paint batch.
+Here you can find the reflectance of 289 handmade oil paint batch.
 ![Dataset Oil paint](https://github.com/Navid-visual/Mixed-integer-ink-selection/blob/main/Dataset/Oil%20paint/all.png)
 ### Spectral paintings:
 We have converted several paintings RGB to reflectance using nonlinear regression and a data set of 300 samples. Here you can find some of these spectral images. The images are reshaped into n x 31 array. 31 is the number of the samples in the wavelengths between 400 to 700 nm with 10 nm steps. 
