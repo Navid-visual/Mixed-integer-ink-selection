@@ -1,5 +1,9 @@
-![teaser](https://github.com/Navid-visual/Mixed-integer-ink-selection/blob/main/teaser.PNG)
 # Mixed integer ink selection
+NAVID ANSARI, Max Planck Institute for Informatics, Germany
+OMID ALIZADEH-MOUSAVI, Depsys SA, Switzerland
+HANS-PETER SEIDEL, Max Planck Institute for Informatics, Germany
+VAHID BABAEI, Max Planck Institute for Informatics, Germany
+![teaser](https://github.com/Navid-visual/Mixed-integer-ink-selection/blob/main/teaser.PNG)
 #### Codes and datasets of the paper "Mixed Integer Ink Selection for Spectral Reproduction"
 In Dataset folder you can find the dataset ta we have used in this project (watercolor paints' reflectance, oil paints' reflectance etc.) 
 
