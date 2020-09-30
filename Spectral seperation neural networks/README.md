@@ -1,4 +1,4 @@
-# Nuralnetwork
+# Neural network
  Spectral separation network consists of two different neural networks:
 *	Forward model: Halftone to reflectance
 *	Backward model: Reflectance to halftone
