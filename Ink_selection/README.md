@@ -3,7 +3,7 @@
      * https://yalmip.github.io/tutorial/installation/
  
 2.	Install and initialize GUROBI using the following:
-     * Use “.\ Gorubi manuals\suitable quickstart_*.pdf” and find the suitable instruction suitable for your OS. Then initialize the Matlab environment. 
+     * Use “.\ Gorubi manuals\suitable quickstart_*.pdf” and find the suitable instruction for your OS. Then initialize the Matlab environment. 
 
 3.	Run “absorbtance_optimization_demo.m”
 
