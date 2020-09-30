@@ -3,7 +3,7 @@
 *	Forward model: Halftone to reflectance
 *	Backward model: Reflectance to halftone
 
-We should start by training the forward network first then we freeze the weights of the forward and train the backward model.
+We should start by training the forward network first (HalftoneToSpec.py) then we freeze the weights of the forward and train the backward model(Forward+Backward.py).
 
 Once you have trained the general backward model you start the adaptive learning (Adaptive learning.py), This will improve the loss of reproduction.
 
